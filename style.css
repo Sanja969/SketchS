@@ -1,0 +1,42 @@
+*{
+    text-align:center;
+}
+.gridBox{
+    display:flex;
+   
+    flex-direction:column;
+
+}
+header{
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.grid{
+   
+    width:300px;
+    height:50px;
+    font-size:20px;
+    background-color:rgb(109, 149, 224);
+    border-radius: 5px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    display:inline-block;
+
+    vertical-align:top;
+}
+.grid:hover{
+    background-color:rgb(154, 174, 212);
+}
+.gridNumber{
+   
+    font-size:20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    display:inline-block;
+    width:200px;
+    height:50px;
+    margin:0;
+    padding:8px;
+
+}
