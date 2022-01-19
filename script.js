@@ -1,21 +1,32 @@
-/*window.onload = () => { 
-          
-}*/
+
+"use strict";
+window.onload = () => {
+  newGrid(16);
+};
 
 function gridSize() {
+  let x = parseInt(
+    prompt(
+      "Pick the number of square per grid. The number need to be between 1 and 20"
+    )
+  );
+  newGrid(x);
+}
 
+
+function newGrid(x) {
   const gridBox = document.querySelector(".gridBox");
   gridBox.innerHTML = "";
   let count = [];
   const square = [];
-  let x = parseInt(prompt("Pick the number of square per grid. The number need to be between 1 and 20"));
+
   let y = 1080 / x;
-   
-  if(x<4||x>100){
-    alert('You picked the wrong number!')
+
+  if (x < 4 || x > 100) {
+    alert("You picked the wrong number!");
     return;
   }
-  document.querySelector('.gridNumber').textContent=x + 'x'+x;
+  document.querySelector(".gridNumber").textContent = x + "x" + x;
 
   for (let j = 0; j < x; j++) {
     count[j] = [];
@@ -32,7 +43,7 @@ function gridSize() {
       square[j].appendChild(square[j][i]);
       //square[j][i].style.border = "2px solid rgb(237, 237, 237)";
       square[j][i].style.flex = "1";
-    
+
       square[j][i].addEventListener("mouseover", function () {
         count[j][i]++;
         let c = count[j][i] / 10;
@@ -40,6 +51,4 @@ function gridSize() {
       });
     }
   }
-
-
 }

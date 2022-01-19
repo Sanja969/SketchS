@@ -1,17 +1,29 @@
 *{
     text-align:center;
 }
+/* main{
+    display:flex;
+} */
+main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
 .gridBox{
     display:flex;
-   
+    border:10px initial rgb(219, 209, 209);
+    background-color:rgb(219, 209, 209) ;
     flex-direction:column;
+    width:700px;
+    height:700px;
+    margin-top: 100px;
+    border-style: groove;
+    box-sizing: border-box;
+  
+}
 
-}
-header{
-    
-    align-items: center;
-    justify-content: space-between;
-}
 .grid{
    
     width:300px;
