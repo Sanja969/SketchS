@@ -32,12 +32,18 @@ function newGrid(x) {
   const square = [];
 
   let y = 1080 / x;
-
+  
   if (x < 4 || x > 100) {
     alert("You picked the wrong number!");
     return;
   }
-  document.querySelector(".gridNumber").textContent = 'Number of grid: '+x + "x" + x;
+  if(x){
+document.querySelector(".gridNumber").textContent =
+  "Number of grid: " + x + "x" + x;
+  }
+    
+    
+  
 
   for (let j = 0; j < x; j++) {
     count[j] = [];
@@ -59,11 +65,11 @@ function newGrid(x) {
         count[j][i]++;
         let c = count[j][i] / 10;
         square[j][i].style.backgroundColor = squareColor;
-        if(document.querySelector('#transparent').checked){
+        if (document.querySelector("#transparent").checked) {
           square[j][i].style.opacity = c;
         }
-        
       });
     }
   }
-}
+  }
+  
