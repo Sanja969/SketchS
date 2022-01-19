@@ -1,10 +1,21 @@
 
 "use strict";
+var squareColor='black';
+
 window.onload = () => {
+  
   newGrid(16);
+  
 };
+function changeColor(color){
+console.log(color);
+squareColor=color;
+
+
+}
 
 function gridSize() {
+  
   let x = parseInt(
     prompt(
       "Pick the number of square per grid. The number need to be between 1 and 20"
@@ -26,7 +37,7 @@ function newGrid(x) {
     alert("You picked the wrong number!");
     return;
   }
-  document.querySelector(".gridNumber").textContent = x + "x" + x;
+  document.querySelector(".gridNumber").textContent = 'Number of grid: '+x + "x" + x;
 
   for (let j = 0; j < x; j++) {
     count[j] = [];
@@ -47,7 +58,11 @@ function newGrid(x) {
       square[j][i].addEventListener("mouseover", function () {
         count[j][i]++;
         let c = count[j][i] / 10;
-        square[j][i].style.backgroundColor = "rgb(0, 0, 0," + c + ")";
+        square[j][i].style.backgroundColor = squareColor;
+        if(document.querySelector('#transparent').checked){
+          square[j][i].style.opacity = c;
+        }
+        
       });
     }
   }

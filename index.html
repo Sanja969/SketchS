@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -17,6 +18,31 @@
                 Select new grid
             </button>
             <p class='gridNumber'>16</p>
+
+
+
+
+            <div class='properties'>
+              
+              <form id="form1">
+                <label for='colors'>Color:</label>
+                <select Black id='colors'name='colors' onmousedown="this.value='';" onchange="changeColor(this.value)">
+                  <option value='black'>Black</option>
+                  <option value='green''>Green</option>
+                  <option value='red'>Red</option>
+                  <option value='yellow'>Yellow</option>
+                  <option value='#FFA500'>Orange</option>
+                  <option value='white'>Indigo</option>
+                  <option value='#9370DB'>Purple</option>
+                  <option value='#4B0082'>White</option>
+                </select>
+              </form>
+              <div><input type="checkbox" id="transparent">
+                <label for='transparent'>Transparent color</label>
+            </div>
+              
+              
+            </div>
         </header> 
 
 

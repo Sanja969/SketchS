@@ -1,54 +1,82 @@
 *{
     text-align:center;
+    color:rgb(243, 245, 241);
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
-/* main{
-    display:flex;
-} */
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/26/05/19/fractal-1280084_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
 main{
     display:flex;
     align-items:center;
     justify-content:center;
+    
+    
 }
 
 
 .gridBox{
     display:flex;
-    border:10px initial rgb(219, 209, 209);
-    background-color:rgb(219, 209, 209) ;
+    border:10px outset rgb(219, 209, 209);
+    background-color:rgb(219, 209, 209, 0.1) ;
     flex-direction:column;
     width:700px;
     height:700px;
-    margin-top: 100px;
+    margin-top: 20px;
     border-style: groove;
     box-sizing: border-box;
+
   
 }
 
 .grid{
    
     width:300px;
+    padding-bottom:10px;
     height:50px;
     font-size:20px;
     background-color:rgb(109, 149, 224);
     border-radius: 5px;
-    font-family: 'Mochiy Pop P One', sans-serif;
+    color:rgb(25, 66, 143);
+ 
     display:inline-block;
+    
 
-    vertical-align:top;
 }
 .grid:hover{
     background-color:rgb(154, 174, 212);
 }
 .gridNumber{
-   
     font-size:20px;
-    border: 2px solid black;
     box-sizing: border-box;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    display:inline-block;
-    width:200px;
     height:50px;
     margin:0;
     padding:8px;
+    color:rgb(151, 197, 240);
 
+}
+
+
+
+.properties{
+    display:flex;
+    
+    justify-content:center;
+}
+.properties div,.properties form{
+    margin-left:20px;
+}
+
+form select option,form select{
+    font-size:20px;
+    color:rgb(109, 103, 47);
+    margin-left:10px;
+   width:300px;
+   background-color: rgb(207, 202, 155);
+}
+label{
+    font-size:20px;
+    color:rgb(207, 202, 155);
 }
