@@ -10,7 +10,7 @@ Browser version of something between a sketchpad and an Etch-A-Sketch
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://github.com/Sanja969/SketchS)
+[Live Demo Link](https://sanja969.github.io/SketchS/)
 
 
 ## Authors
